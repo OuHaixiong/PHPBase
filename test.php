@@ -1,3 +1,4 @@
 <?php
-$path = __DIR__ . '/test_git';
-var_dump(filemtime($path));
+$filePath = '/data/www/PHPBase/data/发票.pdf';
+$filename = preg_replace('/^.+[\\\\\\/]/', '', $filePath); 
+var_dump($filename);
