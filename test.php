@@ -39,3 +39,10 @@ function reversal($str) {
 
 $reversalString = reversal($string);
 var_dump($reversalString);
+
+$data = [
+    'success' => '成功',
+    'parameter_error' => '参数错误',
+    'not_store' => '未找到店铺信息',
+];
+echo json_encode(array('code'=>0,'message'=>'OK', 'data'=>$data));
