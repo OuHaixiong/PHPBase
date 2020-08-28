@@ -46,3 +46,9 @@ $data = [
     'not_store' => '未找到店铺信息',
 ];
 echo json_encode(array('code'=>0,'message'=>'OK', 'data'=>$data));
+
+
+$startTime = strtotime('2020-02-01 00:00:00');
+$endTime = strtotime('2020-03-01 00:00:00');
+$second = $endTime - $startTime;var_dump($second);
+var_dump($second/86400);
